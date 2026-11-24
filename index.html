@@ -1,136 +1,36 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#17110d">
-<meta name="description" content="Invitation au mariage de Raouf et Feriel — 14 décembre 2026, Palais Layel.">
-<title>Raouf & Feriel — Invitation de mariage</title>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#120b07"><title>Raouf & Feriel — Invitation</title>
 <style>
-:root{--gold:#d9b66f;--gold2:#f5e2b4;--ink:#2a1c12;--cream:#fff8e9}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#17110d;color:var(--cream);font-family:Georgia,"Times New Roman",serif}
-button,a{font:inherit}
-#intro{position:fixed;inset:0;z-index:10;display:grid;place-items:center;background:radial-gradient(ellipse at center,#49301b,#100b08 70%);transition:opacity 1s,visibility 1s}
-#intro.hide{opacity:0;visibility:hidden}
-.envelope-wrap{text-align:center;padding:24px}
-.seal{width:104px;height:104px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;margin:0 auto 22px;background:radial-gradient(circle,#d8b46c,#80551e);box-shadow:0 0 50px #d9b66f55;color:#28190d;font-size:35px;animation:pulse 2s infinite}
-@keyframes pulse{50%{box-shadow:0 0 75px #e7c77d99}}
-.kicker{letter-spacing:.28em;text-transform:uppercase;color:var(--gold2);font:11px Arial,sans-serif}
-.open-btn{margin-top:26px;border:1px solid var(--gold);background:transparent;color:var(--gold2);padding:14px 28px;border-radius:30px;letter-spacing:.12em;text-transform:uppercase;font:12px Arial;cursor:pointer}
-main{max-width:760px;margin:auto;padding:22px 14px 50px}
-.card{position:relative;overflow:hidden;min-height:92vh;border:1px solid #b88d4d;border-radius:5px;background:linear-gradient(145deg,#fff8e9,#f2dfba 48%,#fff8e9);color:var(--ink);padding:38px 22px 30px;text-align:center;box-shadow:0 20px 90px #0008}
-.card:before,.card:after{content:"";position:absolute;inset:12px;border:1px solid #c59b57;pointer-events:none}
-.card:after{inset:18px;border-color:#d9bd88}
-.corner{position:absolute;color:#bd8b3c;font-size:38px;opacity:.65}
-.c1{top:22px;left:25px}.c2{top:22px;right:25px}.c3{bottom:20px;left:25px}.c4{bottom:20px;right:25px}
-.content{position:relative;z-index:1}
-.bismillah{font-size:clamp(25px,6vw,38px);color:#94651e;margin:12px 0 22px}
-.smallcaps{font:11px Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#8d672d}
-.invite-ar{font-size:clamp(19px,4.5vw,25px);line-height:1.8;margin:8px auto;direction:rtl}
-.invite-fr{font-style:italic;font-size:clamp(15px,3.7vw,19px);line-height:1.5;max-width:500px;margin:8px auto 22px}
-.names{display:flex;align-items:center;justify-content:center;gap:clamp(8px,3vw,25px);margin:18px 0 4px;color:#8c5d18;flex-wrap:wrap}
-.name{font-size:clamp(35px,9vw,68px);line-height:1.1;direction:rtl}
-.amp{font-size:45px;color:#bd8a32}
-.latin{font-style:italic;font-size:clamp(20px,5vw,31px);color:#986c2b;margin:4px 0 15px}
-.rule{width:62%;height:1px;background:linear-gradient(90deg,transparent,#b68a42,transparent);margin:18px auto}
-.date{font-size:clamp(27px,7vw,42px);color:#754b16;margin:8px 0}
-.time{font-size:22px;margin:8px}
-.venue{font-size:clamp(25px,6vw,34px);font-style:italic;color:#81551c;margin:10px 0 4px}
-.address{font:15px/1.6 Arial,sans-serif;color:#59422c}
-.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;max-width:460px;margin:20px auto}
-.unit{background:#fffaf0;border:1px solid #d2b77e;padding:12px 4px 9px;border-radius:4px;box-shadow:0 4px 12px #80551b12}
-.num{display:block;font-size:clamp(22px,6vw,34px);color:#835719;font-variant-numeric:tabular-nums}
-.unit small{font:9px Arial,sans-serif;letter-spacing:.12em;color:#8a704b}
-.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:520px;margin:22px auto 0}
-.action{display:flex;justify-content:center;align-items:center;gap:8px;text-decoration:none;text-align:center;padding:13px 10px;border-radius:30px;border:1px solid #a77a32;background:#fffaf0;color:#674414;font:12px Arial,sans-serif;cursor:pointer;min-height:46px}
-.action.primary{background:#8b5d1d;color:#fff7e7}
-.footer{font-size:14px;font-style:italic;line-height:1.6;margin:20px auto 12px;max-width:460px}
-.music-note{font:11px Arial,sans-serif;color:#876b42;margin-top:12px}
-@media(max-width:420px){.card{padding:31px 15px 24px;min-height:95vh}.actions{grid-template-columns:1fr}.countdown{gap:5px}.unit{padding:10px 2px}.unit small{font-size:8px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
-</style>
-</head>
-<body>
-<div id="intro">
-  <div class="envelope-wrap">
-    <div class="kicker">Une invitation précieuse</div>
-    <div class="seal">R&nbsp;♥&nbsp;F</div>
-    <div style="font-size:27px;color:#f2dfba">Raouf &amp; Feriel</div>
-    <div class="kicker" style="margin-top:10px">14 décembre 2026</div>
-    <button class="open-btn" id="openBtn">Ouvrir l’invitation ✨</button>
-  </div>
-</div>
-<main>
-<section class="card">
-  <span class="corner c1">❧</span><span class="corner c2">❧</span><span class="corner c3">❧</span><span class="corner c4">❧</span>
-  <div class="content">
-    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-    <div class="smallcaps">Avec joie et bonheur</div>
-    <p class="invite-ar">بكل الحب والفرح، نتشرف بدعوتكم لمشاركتنا فرحة زفافنا</p>
-    <p class="invite-fr">C’est avec une immense joie que nous vous invitons à célébrer notre mariage.</p>
-    <div class="rule"></div>
-    <div class="names">
-      <div><div class="name">عبد الرؤوف</div><div class="latin">Raouf</div></div>
-      <div class="amp">&amp;</div>
-      <div><div class="name">فريال</div><div class="latin">Feriel</div></div>
-    </div>
-    <div class="rule"></div>
-    <p class="invite-ar">وذلك بمشيئة الله تعالى يوم الاثنين</p>
-    <p class="invite-fr">Lundi, 14 décembre 2026</p>
-    <div class="date">14 Décembre 2026</div>
-    <div class="time">De 15h00 à 20h00</div>
-    <div class="countdown" aria-label="Compte à rebours">
-      <div class="unit"><span class="num" id="days">---</span><small>JOURS</small></div>
-      <div class="unit"><span class="num" id="hours">--</span><small>HEURES</small></div>
-      <div class="unit"><span class="num" id="minutes">--</span><small>MINUTES</small></div>
-      <div class="unit"><span class="num" id="seconds">--</span><small>SECONDES</small></div>
-    </div>
-    <div class="smallcaps">Le lieu de célébration</div>
-    <div class="venue">Palais Layel</div>
-    <div class="address">117 route nationale 24<br>Bordj el Bahri Centre</div>
-    <div class="actions">
-      <a class="action primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Palais+Layel%2C+117+route+nationale+24%2C+Bordj+el+Bahri+Centre%2C+Alger%2C+Alg%C3%A9rie">⌖ Voir l’itinéraire</a>
-      <a class="action" href="https://wa.me/?text=Bonjour%2C%20je%20confirme%20ma%20pr%C3%A9sence%20au%20mariage%20de%20Raouf%20et%20Feriel%20le%2014%20d%C3%A9cembre%202026." target="_blank" rel="noopener">♡ Confirmer sur WhatsApp</a>
-      <button class="action" id="calendarBtn">＋ Ajouter au calendrier</button>
-      <button class="action" id="shareBtn">↗ Partager l’invitation</button>
-    </div>
-    <p class="footer" dir="rtl">حضوركم يشرفنا ويكمل فرحتنا</p>
-    <p class="footer">Votre présence sera pour nous le plus beau des cadeaux.</p>
-    <button class="action" id="musicBtn" style="margin:12px auto 0;min-width:190px">♫ Écouter la musique</button>
-    <div class="music-note">Musique instrumentale douce • Appuyez pour activer / couper</div>
-  </div>
-</section>
-</main>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&display=swap');
+:root{--g:#d9b76f;--cream:#fff5df;--brown:#4c2c12}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#120b07;color:var(--cream);font-family:'Cormorant Garamond',serif;overflow-x:hidden}button,a{font:inherit}
+#intro{position:fixed;inset:0;z-index:10;display:grid;place-items:center;text-align:center;background:radial-gradient(ellipse,#53351c,#100906 72%);transition:opacity 1.2s,visibility 1.2s}#intro.hide{opacity:0;visibility:hidden}.intro{padding:20px}.eyebrow{font:10px Arial;letter-spacing:.35em;text-transform:uppercase;color:#e7d3a4}.env{width:min(78vw,310px);height:180px;margin:35px auto 24px;position:relative;background:linear-gradient(145deg,#fff0c9,#b8893e);box-shadow:0 18px 35px #0009}.flap{position:absolute;inset:0;background:linear-gradient(140deg,#fff0c9,#b8893e);clip-path:polygon(0 0,100% 0,50% 65%);transform-origin:top;transition:transform 1s}.seal{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;width:65px;height:65px;display:grid;place-items:center;background:radial-gradient(circle,#f7e2a9,#966222);color:#3a210c;font:25px 'Great Vibes';box-shadow:0 0 0 6px #d9b76f44,0 0 35px #f0cf82}.opening .flap{transform:rotateX(180deg)}.opening .seal{opacity:0}.intro-name{font:50px 'Great Vibes';color:#f5e3b8;margin:10px}.btn{border:1px solid var(--g);border-radius:40px;padding:14px 24px;background:linear-gradient(110deg,#916326,#f0d28c,#916326);background-size:200%;color:#241506;letter-spacing:.12em;font:11px Arial;text-transform:uppercase;cursor:pointer}
+main{max-width:740px;margin:auto;padding:18px 13px 70px}.hero{min-height:88vh;display:grid;place-items:center;text-align:center;position:relative}.hero:before{content:"";position:absolute;inset:3%;border:1px solid #c59c58;border-radius:48% 48% 4px 4px;box-shadow:inset 0 0 55px #d9b76f16}.hero-content{position:relative}.bismillah{font:36px Amiri;color:#e9d29c;margin:25px 0}.hero-title{font:clamp(60px,14vw,100px)/1 'Great Vibes';color:#f0d69a;text-shadow:0 0 35px #d9b76f66}.sub{font:11px Arial;letter-spacing:.2em;color:#d8c49c}.scroll{margin-top:35px;animation:bob 1.8s infinite;color:var(--g)}@keyframes bob{50%{transform:translateY(8px)}}
+.card{position:relative;background:linear-gradient(145deg,#fff8e9,#efdbb5,#fff8e9);color:#382313;text-align:center;padding:45px 20px;margin:10px auto;border:1px solid #c59a55;box-shadow:0 25px 70px #0008}.card:before{content:"";position:absolute;inset:12px;border:1px solid #c59a55;pointer-events:none}.inner{position:relative}.section{padding:17px 0;opacity:0;transform:translateY(25px);transition:1s}.section.show{opacity:1;transform:none}.ar{font:25px/1.9 Amiri;direction:rtl}.fr{font-size:19px;font-style:italic}.names{display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:wrap;color:#865819}.namear{font:clamp(40px,10vw,70px) Amiri;direction:rtl}.namefr{font:38px 'Great Vibes';color:#966929}.amp{font:42px 'Great Vibes';color:#b8883b}.orn{color:#ad8039;font-size:24px;letter-spacing:.3em;margin:12px}.label{font:10px Arial;letter-spacing:.3em;color:#92703d;text-transform:uppercase}.date{font-size:46px;font-weight:600;color:#744b18}.time{font-size:23px}.count{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;max-width:470px;margin:20px auto}.unit{padding:13px 3px;background:#fffaf0;border:1px solid #d2b77e;position:relative;overflow:hidden}.unit:after{content:"";position:absolute;top:-50%;left:-70%;width:35%;height:200%;background:#fff9;transform:rotate(25deg);animation:shine 5s infinite}@keyframes shine{0%,65%{left:-70%}100%{left:140%}}.num{display:block;font-size:clamp(25px,7vw,40px);color:#835719;font-variant-numeric:tabular-nums}.unit small{font:9px Arial;letter-spacing:.12em;color:#8a704b}.venue{font:48px 'Great Vibes';color:#895b1e}.address{font:15px/1.7 Arial;color:#59422c}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:520px;margin:22px auto}.action{padding:14px 8px;border:1px solid #a77a32;border-radius:30px;background:#fffaf0;color:#674414;text-decoration:none;font:12px Arial;cursor:pointer}.primary{background:#8b5d1d;color:#fff7e7}.footer{font:24px Amiri}.music{position:fixed;z-index:8;right:12px;bottom:12px;border:1px solid var(--g);border-radius:30px;background:#24170d;color:#f5e6bd;padding:12px 16px;font:12px Arial;cursor:pointer}.petals{position:fixed;inset:0;pointer-events:none;z-index:4;overflow:hidden}.petal{position:absolute;top:-25px;width:12px;height:18px;background:linear-gradient(135deg,#f5dfb1,#b98340);border-radius:100% 0;opacity:.6;animation:fall linear infinite}@keyframes fall{to{transform:translate(90px,110vh) rotate(720deg)}}.spark{position:fixed;width:4px;height:4px;border-radius:50%;background:#ffe6a9;box-shadow:0 0 12px 3px #e8c77b;pointer-events:none;animation:twinkle 2s infinite alternate}@keyframes twinkle{to{opacity:.1;transform:scale(.3)}}@media(max-width:430px){.actions{grid-template-columns:1fr}.card{padding:36px 15px}.hero{min-height:82vh}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.section{opacity:1;transform:none}}
+</style></head><body>
+<div id="intro"><div class="intro"><div class="eyebrow">Une invitation précieuse</div><div class="env"><div class="flap"></div><div class="seal">R ♡ F</div></div><div class="intro-name">Raouf & Feriel</div><div class="eyebrow">14 décembre 2026 · Palais Layel</div><button class="btn" id="open" style="margin-top:25px">Ouvrir notre invitation ✨</button></div></div>
+<div class="petals" id="petals"></div><main><section class="hero"><div class="hero-content"><div class="eyebrow">Save the date · 14.12.2026</div><div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><div class="hero-title">Raouf & Feriel</div><div class="sub">Deux cœurs · Une belle histoire · Un jour inoubliable</div><div class="scroll">FAIRE DÉFILER<br>⌄</div></div></section>
+<section class="card"><div class="inner">
+<div class="section"><div class="label">Avec joie et bonheur</div><p class="ar">بكل الحب والفرح، نتشرف بدعوتكم لمشاركتنا فرحة زفافنا</p><p class="fr">C’est avec une immense joie que nous vous invitons à célébrer notre mariage.</p><div class="orn">✦ ❧ ✦</div></div>
+<div class="section"><div class="names"><div><div class="namear">عبد الرؤوف</div><div class="namefr">Raouf</div></div><div class="amp">&</div><div><div class="namear">فريال</div><div class="namefr">Feriel</div></div></div><div class="orn">♡ ─── ✧ ─── ♡</div></div>
+<div class="section"><div class="label">La célébration · الاحتفال</div><p class="ar">وذلك بمشيئة الله تعالى يوم الاثنين</p><p class="fr">Lundi 14 décembre 2026</p><div class="date">14 Décembre 2026</div><div class="time">15h00 — 20h00</div></div>
+<div class="section"><div class="label">Le compte à rebours · العد التنازلي</div><div class="count"><div class="unit"><span class="num" id="days">---</span><small>JOURS</small></div><div class="unit"><span class="num" id="hours">--</span><small>HEURES</small></div><div class="unit"><span class="num" id="minutes">--</span><small>MINUTES</small></div><div class="unit"><span class="num" id="seconds">--</span><small>SECONDES</small></div></div></div>
+<div class="section"><div class="label">Le lieu de célébration · مكان الحفل</div><div class="venue">Palais Layel</div><div class="address">117 route nationale 24<br>Bordj el Bahri Centre</div><div class="orn">✧ ❧ ✧</div></div>
+<div class="section"><p class="footer" dir="rtl">حضوركم يشرفنا ويكمل فرحتنا</p><p class="fr">Votre présence sera pour nous le plus beau des cadeaux.</p><div class="orn">❦</div><div class="actions">
+<a class="action primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Palais+Layel%2C+117+route+nationale+24%2C+Bordj+el+Bahri+Centre%2C+Alger%2C+Alg%C3%A9rie">⌖ Voir l’itinéraire</a>
+<a class="action" target="_blank" rel="noopener" href="https://wa.me/?text=Bonjour%2C%20je%20confirme%20ma%20pr%C3%A9sence%20au%20mariage%20de%20Raouf%20et%20Feriel%20le%2014%20d%C3%A9cembre%202026.">♡ Confirmer sur WhatsApp</a>
+<button class="action" id="calendar">＋ Ajouter au calendrier</button><button class="action" id="share">↗ Partager l’invitation</button></div></div>
+</div></section></main><button class="music" id="music">♫ Activer la musique</button>
 <script>
-const target = new Date('2026-12-14T15:00:00+01:00').getTime();
-function tick(){
- const diff=target-Date.now();
- if(diff<=0){['days','hours','minutes','seconds'].forEach(id=>document.getElementById(id).textContent='00');return;}
- const vals={days:Math.floor(diff/86400000),hours:Math.floor(diff/3600000)%24,minutes:Math.floor(diff/60000)%60,seconds:Math.floor(diff/1000)%60};
- Object.entries(vals).forEach(([id,v])=>document.getElementById(id).textContent=String(v).padStart(2,'0'));
-}
-tick();setInterval(tick,1000);
-document.getElementById('openBtn').addEventListener('click',()=>{document.getElementById('intro').classList.add('hide');});
-let audioCtx=null,oscillators=[],gain=null,playing=false;
-function musicOn(){
- audioCtx=new (window.AudioContext||window.webkitAudioContext)();
- gain=audioCtx.createGain();gain.gain.value=.035;gain.connect(audioCtx.destination);
- // Original synthesized ambient notes; no third-party recording.
- const notes=[261.63,329.63,392.00,329.63,293.66,349.23,440.00,349.23];
- notes.forEach((freq,i)=>{const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=freq;g.gain.value=.13;o.connect(g);g.connect(gain);o.start();oscillators.push({o,g,i});});
- let step=0;window.musicTimer=setInterval(()=>{if(!audioCtx)return;oscillators.forEach(({g,i})=>{g.gain.setTargetAtTime(i===step%8?.18:.035,audioCtx.currentTime,.25)});step++;},650);
- playing=true;document.getElementById('musicBtn').textContent='Ⅱ Couper la musique';
-}
-function musicOff(){if(window.musicTimer)clearInterval(window.musicTimer);if(audioCtx){audioCtx.close();audioCtx=null;}oscillators=[];playing=false;document.getElementById('musicBtn').textContent='♫ Écouter la musique';}
-document.getElementById('musicBtn').addEventListener('click',()=>playing?musicOff():musicOn());
-document.getElementById('shareBtn').addEventListener('click',async()=>{const data={title:'Raouf & Feriel — Invitation',text:'Nous serions heureux de vous accueillir le 14 décembre 2026.',url:location.href};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(location.href);alert('Lien copié !');}}catch(e){}});
-document.getElementById('calendarBtn').addEventListener('click',()=>{
- const start='20261214T140000Z',end='20261214T190000Z';
- const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Raouf et Feriel//Invitation//FR','BEGIN:VEVENT','UID:raouf-feriel-20261214@invitation','DTSTAMP:20261124T120000Z','DTSTART:'+start,'DTEND:'+end,'SUMMARY:Mariage de Raouf et Feriel','LOCATION:Palais Layel, 117 route nationale 24, Bordj el Bahri Centre','DESCRIPTION:Invitation au mariage de Raouf et Feriel','END:VEVENT','END:VCALENDAR'].join('\r\n');
- const blob=new Blob([ics],{type:'text/calendar;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='mariage-raouf-feriel.ics';a.click();URL.revokeObjectURL(url);
-});
-</script>
-</body>
-</html>
+document.getElementById('open').onclick=()=>{let i=document.getElementById('intro');i.classList.add('opening');setTimeout(()=>i.classList.add('hide'),850)};
+for(let i=0;i<20;i++){let p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'%';p.style.animationDuration=9+Math.random()*14+'s';p.style.animationDelay=-Math.random()*20+'s';document.getElementById('petals').appendChild(p)}
+for(let i=0;i<24;i++){let s=document.createElement('i');s.className='spark';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';document.body.appendChild(s)}
+let obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.section').forEach(x=>obs.observe(x));
+let target=new Date('2026-12-14T15:00:00+01:00').getTime();function tick(){let d=Math.max(0,target-Date.now()),v={days:Math.floor(d/864e5),hours:Math.floor(d/36e5)%24,minutes:Math.floor(d/6e4)%60,seconds:Math.floor(d/1e3)%60};Object.entries(v).forEach(([k,n])=>document.getElementById(k).textContent=String(n).padStart(2,'0'))}tick();setInterval(tick,1000);
+// Browser-generated soft instrumental motif; tap required by mobile browser audio policies.
+let ctx=null,timer=null,on=false,step=0;const melody=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,659.25,783.99,1046.5,880,783.99,659.25,587.33],chords=[[261.63,329.63,392],[220,261.63,329],[174.61,220,261],[196,246.94,293.66]];
+function play(f,t,d,v,type='sine'){let o=ctx.createOscillator(),g=ctx.createGain();o.type=type;o.frequency.value=f;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(v,t+.08);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(ctx.destination);o.start(t);o.stop(t+d+.02)}
+function start(){ctx=new(window.AudioContext||window.webkitAudioContext)();step=0;timer=setInterval(()=>{let t=ctx.currentTime,n=step%16;play(melody[n],t,.9,.045);if(n%4===0)chords[Math.floor(step/4)%4].forEach(f=>play(f/2,t,2.7,.018,'triangle'));if(n%2===0)play(melody[n]*2,t,.3,.01);step++},520);on=true;document.getElementById('music').textContent='Ⅱ Couper la musique'}
+function stop(){clearInterval(timer);if(ctx)ctx.close();ctx=null;on=false;document.getElementById('music').textContent='♫ Activer la musique'}
+document.getElementById('music').onclick=()=>on?stop():start();
+document.getElementById('share').onclick=async()=>{let d={title:'Raouf & Feriel — Invitation',text:'Rendez-vous le 14 décembre 2026 !',url:location.href};try{if(navigator.share)await navigator.share(d);else{await navigator.clipboard.writeText(location.href);alert('Lien copié')}}catch(e){}};
+document.getElementById('calendar').onclick=()=>{let x=['BEGIN:VCALENDAR','VERSION:2.0','BEGIN:VEVENT','UID:raouf-feriel-20261214@invitation','DTSTART;TZID=Africa/Algiers:20261214T150000','DTEND;TZID=Africa/Algiers:20261214T200000','SUMMARY:Mariage de Raouf et Feriel','LOCATION:Palais Layel, 117 route nationale 24, Bordj el Bahri Centre','END:VEVENT','END:VCALENDAR'].join('\\r\\n'),u=URL.createObjectURL(new Blob([x],{type:'text/calendar'})),a=document.createElement('a');a.href=u;a.download='mariage-raouf-feriel.ics';a.click();URL.revokeObjectURL(u)};
+</script></body></html>
