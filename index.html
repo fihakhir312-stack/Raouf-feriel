@@ -75,6 +75,20 @@ main{width:min(100%,720px);margin:auto;position:relative;padding:0 12px 60px}
 .name-highlight{font:clamp(43px,10vw,60px) var(--script);color:#718267;margin:5px auto 10px}
 .divider{color:#a28b5c;letter-spacing:.42em;margin:21px 0;font-size:18px}
 .closing{font:clamp(18px,4vw,22px) var(--serif);font-style:italic;color:#68705a;margin:15px auto 0}
+.dua-block{
+ position:relative;max-width:500px;margin:25px auto 22px;padding:20px 18px 18px;
+ border-top:1px solid #c9c0a7;border-bottom:1px solid #c9c0a7;
+ background:linear-gradient(135deg,#f2f3e9a8,#fffdf4d9,#eef1e7a8);
+}
+.dua-block:before,.dua-block:after{
+ content:"✧";position:absolute;top:50%;transform:translateY(-50%);
+ color:#a58d5d;font-size:14px;background:#fffdf6;padding:4px;
+}
+.dua-block:before{left:-7px}.dua-block:after{right:-7px}
+.dua-label{font:8px Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#85866e;margin-bottom:10px}
+.dua-ar{font:clamp(24px,5.3vw,30px)/1.9 var(--arabic);direction:rtl;color:#43543d;margin:0 auto}
+.dua-fr{font:clamp(14px,3.5vw,17px)/1.5 var(--serif);font-style:italic;color:#777b68;margin:8px auto 0;max-width:420px}
+
 /* date section stays light like the template, with three circular live counters */
 .date-section{position:relative;margin:4px auto 16px;padding:0 18px 15px;text-align:center;max-width:650px;overflow:visible}
 .date-title{font:clamp(17px,4vw,21px) var(--serif);letter-spacing:.24em;text-transform:uppercase;color:#85866e;margin:22px 0 13px}
@@ -171,6 +185,11 @@ main{width:min(100%,720px);margin:auto;position:relative;padding:0 12px 60px}
   <div class="name-highlight">Feriel</div>
   <div class="divider">✧ ❧ ✧</div>
   <p class="copy-ar">يسرّ والدا فريال أن يعلنا عن زفاف ابنتهما، ويتشرّفان بدعوتكم لمشاركتهما فرحة هذه المناسبة السعيدة.</p>
+  <div class="dua-block" lang="ar" aria-label="دعاء للعروسين">
+   <div class="dua-label">دعاء للعروسين · Une bénédiction</div>
+   <p class="dua-ar">اللَّهُمَّ بَارِكْ لَهُمَا، وَبَارِكْ عَلَيْهِمَا، وَاجْمَعْ بَيْنَهُمَا فِي خَيْرٍ</p>
+   <p class="dua-fr">Qu’Allah les comble de bénédictions et les réunisse dans le bien.</p>
+  </div>
   <p class="closing">Nous comptons sur votre présence pour partager cette belle journée.</p>
  </section>
 
