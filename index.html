@@ -38,7 +38,7 @@ body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opac
 #opening.opening .env-flap{transform:rotateX(180deg)}
 #opening.opening .wax{opacity:0;transform:translate(-50%,-50%) scale(1.35)}
 #opening.opening .envelope{transform:translateY(-18px) scale(1.03);transition:transform 1s}
-.opening-name{font:clamp(46px,11vw,60px) var(--script);color:#526449;margin:0 0 4px}
+.opening-name{font:clamp(35px,8.5vw,52px) var(--script);color:#526449;margin:0 0 4px;white-space:nowrap}.opening-name .union{color:#a88b58;font-size:.72em;padding:0 .08em}
 .opening-btn{border:1px solid #87947b;background:#526449;color:#fffaf0;padding:14px 25px;margin-top:22px;font:9px Arial;letter-spacing:.2em;text-transform:uppercase;transition:.3s;box-shadow:0 8px 22px #43543d24}
 .opening-btn:hover{background:#35472f;transform:translateY(-2px)}
 /* continuous page like the supplied template — one flowing invitation, not a pile of cards */
@@ -138,7 +138,7 @@ main{width:min(100%,720px);margin:auto;position:relative;padding:0 12px 60px}
   <div class="envelope" id="envelope">
    <div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="wax">F ♡</div>
   </div>
-  <div class="opening-name">Feriel</div>
+  <div class="opening-name">Feriel <span class="union">♡</span> Raouf</div>
   <div class="opening-label">14 décembre 2026 · Palais Layel</div>
   <button class="opening-btn" id="openInvite">Ouvrir l’invitation&nbsp; ✧</button>
  </div>
