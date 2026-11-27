@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f4ecdf">
-<meta name="description" content="Invitation à la célébration du mariage de Feriel — 14 décembre 2026, Palais Layel.">
-<title>Feriel — Une invitation à célébrer</title>
+<meta name="description" content="Invitation à la célébration du mariage de Feriel et Raouf — 14 décembre 2026, Palais Layel.">
+<title>Feriel &amp; Raouf — Une invitation à célébrer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -34,7 +34,8 @@ body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opac
 .env-back{position:absolute;inset:0;background:linear-gradient(140deg,#fff9ea,#d8c49b);border:1px solid #bda778}
 .env-front{position:absolute;inset:0;background:linear-gradient(155deg,#f4e8d0,#d6c19a);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);z-index:2}
 .env-flap{position:absolute;inset:0;background:linear-gradient(160deg,#fff8e8,#c6ad7d);clip-path:polygon(0 0,100% 0,50% 62%);transform-origin:top center;transition:transform 1.15s cubic-bezier(.2,.7,.1,1);z-index:4}
-.wax{position:absolute;z-index:5;left:50%;top:51%;transform:translate(-50%,-50%);width:67px;height:67px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 32% 28%,#e8d7b0,#a78b55 78%);border:2px solid #f4e8ce;box-shadow:0 0 0 5px #b89c6530,0 0 25px #84744c33;color:#fff8e7;font:29px var(--script);transition:transform .6s,opacity .4s}
+.wax{position:absolute;z-index:5;left:50%;top:51%;transform:translate(-50%,-50%);width:67px;height:67px;border-radius:50%;display:flex;align-items:center;justify-content:center;gap:2px;background:radial-gradient(circle at 32% 28%,#e8d7b0,#a78b55 78%);border:2px solid #f4e8ce;box-shadow:0 0 0 5px #b89c6530,0 0 25px #84744c33;color:#fff8e7;font:20px var(--serif);white-space:nowrap;transition:transform .6s,opacity .4s}
+.seal-heart{color:#8f3540;font-size:1.05em;line-height:1}
 #opening.opening .env-flap{transform:rotateX(180deg)}
 #opening.opening .wax{opacity:0;transform:translate(-50%,-50%) scale(1.35)}
 #opening.opening .envelope{transform:translateY(-18px) scale(1.03);transition:transform 1s}
@@ -49,8 +50,9 @@ main{width:min(100%,720px);margin:auto;position:relative;padding:0 12px 60px}
 .hero-overlay{position:absolute;inset:0;text-align:center;display:flex;flex-direction:column;align-items:center;pointer-events:none;padding:22% 24% 0;color:#263323}
 .hero-bismillah{font:clamp(22px,5vw,31px) var(--arabic);margin:0 0 6%;text-shadow:0 1px 10px #f5f0e3}
 .hero-invite{font:clamp(11px,2.7vw,16px) var(--arabic);line-height:1.75;direction:rtl;margin:0 auto 3%;max-width:300px;color:#293425}
-.hero-name-ar{font:clamp(38px,9.3vw,59px)/1.08 var(--arabic);direction:rtl;color:#172316;text-shadow:0 1px 10px #e6e0c9;margin:0}
-.hero-name-fr{font:clamp(42px,9.5vw,62px)/1.05 var(--script);color:#243320;margin:3px 0 7%}
+.hero-name-ar{font:clamp(23px,5.8vw,38px)/1.3 var(--arabic);direction:rtl;color:#172316;text-shadow:0 1px 10px #e6e0c9;margin:0}
+.couple-heart{color:#a88b58;font-size:.78em;padding:0 .08em}
+.hero-name-fr{font:clamp(31px,7vw,46px)/1.08 var(--script);color:#243320;margin:3px 0 7%;white-space:nowrap}
 .hero-date{font:clamp(13px,3vw,17px) var(--serif);font-weight:600;letter-spacing:.15em;color:#263522}
 .hero-time{font:clamp(11px,2.5vw,15px) var(--serif);letter-spacing:.1em;margin-top:5px}
 .hero-hint{font:8px Arial;letter-spacing:.2em;text-transform:uppercase;color:#526149;margin-top:auto;margin-bottom:11%;animation:breathe 2.6s infinite}
@@ -150,7 +152,7 @@ main{width:min(100%,720px);margin:auto;position:relative;padding:0 12px 60px}
  <div class="opening-wrap">
   <div class="opening-label">Une invitation précieuse</div>
   <div class="envelope" id="envelope">
-   <div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="wax">F ♡</div>
+   <div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="wax">F <span class="seal-heart">♥</span> R</div>
   </div>
   <div class="opening-name">Feriel <span class="union">♡</span> Raouf</div>
   <div class="opening-label">14 décembre 2026 · Palais Layel</div>
@@ -165,11 +167,11 @@ main{width:min(100%,720px);margin:auto;position:relative;padding:0 12px 60px}
   <img class="hero-art" src="feriel-arch.png" alt="Arche mauresque ivoire et sauge, ornée de fleurs blanches, lanternes et végétation">
   <div class="hero-overlay">
    <div class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-   <div class="hero-invite">بكل فرح وسرور، نتشرّف بدعوتكم لمشاركتنا فرحة زفاف فريال</div>
-   <h1 class="hero-name-ar">فريال</h1>
-   <div class="hero-name-fr">Feriel</div>
+   <div class="hero-invite">بكل فرح وسرور، نتشرّف بدعوتكم لمشاركتنا فرحة زفاف فريال وعبد الرؤوف</div>
+   <h1 class="hero-name-ar">فريال <span class="couple-heart">♡</span> عبد الرؤوف</h1>
+   <div class="hero-name-fr">Feriel <span class="couple-heart">♡</span> Raouf</div>
    <div class="hero-date">14 DÉCEMBRE 2026</div>
-   <div class="hero-time">À PARTIR DE 15H00</div>
+   <div class="hero-time">À PARTIR DE 14H00</div>
    <div class="hero-hint">DÉCOUVRIR LES DÉTAILS&nbsp; ↓</div>
   </div>
  </section>
@@ -181,10 +183,10 @@ main{width:min(100%,720px);margin:auto;position:relative;padding:0 12px 60px}
  <section class="message-section reveal" id="invitation">
   <div class="eyebrow">Votre présence nous est précieuse</div>
   <h2 class="message-heading">Chers proches et amis,</h2>
-  <p class="parent-intro">Les parents de Feriel ont la joie et le plaisir de vous faire part du mariage de leur fille, et vous prient de bien vouloir honorer de votre présence cette heureuse cérémonie.</p>
-  <div class="name-highlight">Feriel</div>
+  <p class="parent-intro">Les parents de Feriel ont la joie et le plaisir de vous faire part du mariage de leur fille Feriel avec Raouf, et vous prient de bien vouloir honorer de votre présence cette heureuse cérémonie.</p>
+  <div class="name-highlight">Feriel ♡ Raouf</div>
   <div class="divider">✧ ❧ ✧</div>
-  <p class="copy-ar">يسرّ والدا فريال أن يعلنا عن زفاف ابنتهما، ويتشرّفان بدعوتكم لمشاركتهما فرحة هذه المناسبة السعيدة.</p>
+  <p class="copy-ar">يسرّ والدا فريال أن يعلنا عن زفاف ابنتهما فريال على عبد الرؤوف، ويتشرّفان بدعوتكم لمشاركتهما فرحة هذه المناسبة السعيدة.</p>
   <div class="dua-block" lang="ar" aria-label="دعاء للعروسين">
    <div class="dua-label">دعاء للعروسين · Une bénédiction</div>
    <p class="dua-ar">اللَّهُمَّ بَارِكْ لَهُمَا، وَبَارِكْ عَلَيْهِمَا، وَاجْمَعْ بَيْنَهُمَا فِي خَيْرٍ</p>
@@ -199,7 +201,7 @@ main{width:min(100%,720px);margin:auto;position:relative;padding:0 12px 60px}
   <div class="eyebrow">Le grand jour approche</div>
   <div class="date-title">La célébration</div>
   <div class="event-date">14 Décembre 2026</div>
-  <div class="event-time">De 15h00 à 20h00 · Lundi</div>
+  <div class="event-time">De 14h00 à 19h00 · Lundi</div>
   <div class="grand-day">Plus que quelques instants…</div>
   <div class="countdown" aria-label="Compte à rebours">
    <div class="count-unit">
@@ -235,7 +237,7 @@ main{width:min(100%,720px);margin:auto;position:relative;padding:0 12px 60px}
   <div class="final-ar">حضوركم يشرفنا ويكمل فرحتنا</div>
   <div class="final-fr">Votre présence sera pour nous le plus beau des cadeaux.</div>
   <div class="actions">
-   <a class="action" id="rsvpLink" target="_blank" rel="noopener" href="https://wa.me/?text=Bonjour%2C%20je%20confirme%20ma%20pr%C3%A9sence%20%C3%A0%20la%20c%C3%A9l%C3%A9bration%20du%20mariage%20de%20Feriel%20le%2014%20d%C3%A9cembre%202026%20au%20Palais%20Layel.">♡ Confirmer sur WhatsApp</a>
+   <a class="action" id="rsvpLink" target="_blank" rel="noopener" href="https://wa.me/?text=Bonjour%2C%20je%20confirme%20ma%20pr%C3%A9sence%20%C3%A0%20la%20c%C3%A9l%C3%A9bration%20du%20mariage%20de%20Feriel%20et%20Raouf%20le%2014%20d%C3%A9cembre%202026%20au%20Palais%20Layel.">♡ Confirmer sur WhatsApp</a>
    <button class="action light" id="calendarBtn">＋ Ajouter au calendrier</button>
    <button class="action light" id="shareBtn">↗ Partager l’invitation</button>
   </div>
@@ -281,7 +283,7 @@ const revealObserver=new IntersectionObserver(entries=>{
 document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 
 // Three circular live counters to match the template: days, hours and minutes.
-const eventTime=new Date('2026-12-14T15:00:00+01:00').getTime();
+const eventTime=new Date('2026-12-14T14:00:00+01:00').getTime();
 const circumference=2*Math.PI*30;
 for(const id of ['ringDays','ringHours','ringMinutes']){
  const ring=document.getElementById(id);
@@ -319,7 +321,7 @@ audio.addEventListener('ended',()=>{musicBtn.classList.remove('playing');musicLa
 
 // Share using the phone's native sharing sheet where available.
 document.getElementById('shareBtn').addEventListener('click',async()=>{
- const data={title:'Feriel — Invitation',text:'Rendez-vous le 14 décembre 2026 au Palais Layel.',url:location.href};
+ const data={title:'Feriel & Raouf — Invitation',text:'Rendez-vous le 14 décembre 2026, de 14h00 à 19h00, au Palais Layel.',url:location.href};
  try{
   if(navigator.share)await navigator.share(data);
   else{await navigator.clipboard.writeText(location.href);alert('Lien copié.');}
@@ -328,7 +330,7 @@ document.getElementById('shareBtn').addEventListener('click',async()=>{
 
 // Download a calendar event (Algeria local time).
 document.getElementById('calendarBtn').addEventListener('click',()=>{
- const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Feriel//Invitation//FR','CALSCALE:GREGORIAN','BEGIN:VEVENT','UID:feriel-20261214-palais-layel@invitation','DTSTART;TZID=Africa/Algiers:20261214T150000','DTEND;TZID=Africa/Algiers:20261214T200000','SUMMARY:Célébration du mariage de Feriel','LOCATION:Palais Layel, 117 route nationale 24, Bordj El Bahri Centre','DESCRIPTION:Invitation à la célébration du mariage de Feriel.','END:VEVENT','END:VCALENDAR'];
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Feriel//Invitation//FR','CALSCALE:GREGORIAN','BEGIN:VEVENT','UID:feriel-20261214-palais-layel@invitation','DTSTART;TZID=Africa/Algiers:20261214T140000','DTEND;TZID=Africa/Algiers:20261214T190000','SUMMARY:Célébration du mariage de Feriel et Raouf','LOCATION:Palais Layel, 117 route nationale 24, Bordj El Bahri Centre','DESCRIPTION:Invitation à la célébration du mariage de Feriel et Raouf, de 14h00 à 19h00.','END:VEVENT','END:VCALENDAR'];
  const blob=new Blob([lines.join('\r\n')],{type:'text/calendar;charset=utf-8'});
  const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='invitation-feriel.ics';a.click();URL.revokeObjectURL(url);
 });
